@@ -1,0 +1,120 @@
+/*
+* Author: George Mejia
+* Template: Mindy Admin Bootstrap
+* Version: 0.0.1
+* Bootstrap version: 2.3.2
+* Copyright 2012 George Mejia
+* Lincense: Apache License 2.0
+* mail: gmejia.fisi@gmail.com
+* You can get this theme on Github: https://github.com/geoom/mindySkin
+*/
+
+@import "variables.less";
+@import "mixins.less";
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxn5HxGBcBvicCpTp6spHfNo.woff) format('woff');
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: #fff;
+  color: #666;
+  line-height: 22px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444;
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin-top: 0;
+  small{
+    font-size: 12px;
+  margin: 0 0 0 5px;
+  }
+}
+
+
+h1 {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 22px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+h6 {
+  font-size: 11px;
+  line-height: 15px;
+}
+
+strong, b {
+  color: #555;
+}
+
+a {
+  color: #4aafe4;
+  &:hover, &:focus {
+ color: #6096d6;
+  outline: none;
+  }
+}
+
+small,
+.small {
+  font-size: 90%;
+}
+.text-center {
+  text-align: center;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  margin: 0 2px;
+  vertical-align: -2px;
+}
+
+.actions{
+  padding-bottom: : 20px;
+}
+
+@import "layouts.less";
+@import "navbar.less";
+@import "buttons.less";

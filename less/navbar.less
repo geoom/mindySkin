@@ -1,0 +1,116 @@
+// MindySkin 0.0.1
+// Navbars
+// --------------------------------------------------
+
+.navbar {
+  	margin-bottom: 0;
+  	background: #eee;
+  	.brand {
+	  // background: url(../img/logo.png) 0 center no-repeat;
+	  display: block;
+	  // text-indent: -9999px;
+	  // font-size: 0;
+	  // width: 141px;
+	  height: 30px;
+	  margin-top: 20px;
+	  margin-left: 0;
+	  padding: 0;
+	}
+	.nav > li{
+		& > a {
+			.border-radius(3px);
+			margin: 15px 0;
+			padding: 9px 15px;
+			text-shadow: none;
+			&.btn {
+			  	border: 0;
+			  	font-size: 13px;
+			  	font-weight: 600;
+			  	padding: 9px 15px;
+			}
+			&:hover, &:focus{
+				outline: none;
+			}
+		}
+		& + li {
+		  margin-left: 15px;
+		}
+		&.login {
+		  margin-left: 25px;
+		}
+		&.open .btn {
+		  background: #2980B9;
+		}
+		&.active > a,
+		&.active > a:hover,
+		&.dropdown.active > .dropdown-toggle {
+			background: #eee;
+			.box-shadow(none);
+			font-weight: bold;
+		}
+		&.dropdown.open > .dropdown-toggle {
+			background: #fff;
+			.border-radius(3px 3px 0 0);
+			border: 1px solid #ccc;
+			border-top-color: #ddd;
+			border-bottom: 0;
+			border-color: rgba(0, 0, 0, 0.2);
+			border-color-top: rgba(0, 0, 0, 0.15);
+			padding: 8px 14px;
+			position: relative;
+			z-index: 9999;
+		}
+		&.dropdown.open > .dropdown-toggle,
+		&.dropdown.open.active > .dropdown-toggle {
+			background: #fff;
+  			.box-shadow(none);
+		}
+		.dropdown-menu {
+			.border-radius(0 3px 3px 3px);
+			border: 1px solid #ccc;
+			border-bottom-color: #bbb;
+			border-color: rgba(0, 0, 0, 0.2);
+			border-color: rgba(0, 0, 0, 0.25);
+			margin: 0;
+			padding: 8px 0;
+			top: 51px;
+			z-index: 9998;
+
+			&:after, &:before{
+				display: none;
+			}
+			li a {
+				padding: 8px 20px;
+				&:hover{
+					background: #2980B9;
+				}
+			}
+		}
+	}
+	.module-title{
+		float: left;
+		margin: 20px 0;
+		margin-right: 20px;
+		span{
+			font-size: 30px;
+			font-weight: bold;
+		}
+	}
+}
+
+.navbar-static-top a{
+		font-size: 16px;
+}
+
+.navbar-inverse .navbar-inner {
+	background: #2f353e;
+	border-bottom: 0 none;
+	.navlinks {
+		font-weight: 400;
+		color: #c7c7c7;
+		top: 28px;
+		text-shadow: 0 1px 1px #343434;
+		margin-left: 15px;
+		text-align: left;
+	}
+}

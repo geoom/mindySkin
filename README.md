@@ -6,7 +6,7 @@ The admin template adapts seamlessly with any device such as desktop, mac, table
 
 ## Copyright and license
 
-Copyright 2012 Twitter, Inc.
+Copyright 2013 George Mejia all rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
